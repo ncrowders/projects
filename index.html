@@ -1,8 +1,84 @@
 <!DOCTYPE html>
+
+
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+<body>
+  <div class="container">
+<h1 id="title">Survey Form</h1>
+  <p id="description">Please fill out this survey form to provide your feedback. Your responses are valuable!</p>
+<hr>
+  <form id="survey-form" action="#" method="post">
+    <div class="form-group">
+      <label id="name-label" for="name">Name</label>
+      <input id="name" type="text" name="name" placeholder="Enter your name" required>
+    </div>
+
+    <div class="form-group">
+      <label id="email-label" for="email">Email</label>
+      <input id="email" type="email" name="email" placeholder="Enter your email" required>
+    </div>
+
+    <div class="form-group">
+      <label id="number-label" for="number">Age</label>
+      <input id="number" type="number" name="age" placeholder="Enter your age" min="18" max="100" required>
+    </div>
+
+    <div class="form-group">
+      <label for="dropdown">Choose your favorite programming language</label>
+      <select id="dropdown" name="programming-language" required>
+        <option value="javascript">JavaScript</option>
+        <option value="python">Python</option>
+        <option value="java">Java</option>
+        <option value="c++">C++</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label>Do you like programming?</label>
+      <label>
+        <input type="radio" name="programming-like" value="yes"> Yes
+      </label>
+      <label>
+        <input type="radio" name="programming-like" value="no"> No
+      </label>
+    </div>
+
+    <div class="form-group">
+      <label>Which technologies are you familiar with?</label>
+      <label>
+        <input type="checkbox" name="technologies" value="html"> HTML
+      </label>
+      <label>
+        <input type="checkbox" name="technologies" value="css"> CSS
+      </label>
+      <label>
+        <input type="checkbox" name="technologies" value="javascript"> JavaScript
+      </label>
+      <label>
+        <input type="checkbox" name="technologies" value="python"> Python
+      </label>
+    </div>
+
+    <div class="form-group">
+      <label for="comments">Additional Comments</label>
+      <textarea id="comments" name="comments" placeholder="Write your comments here" rows="4"></textarea>
+    </div>
+
+    <div>
+      <button id="submit" type="submit" value="Submit"> Submit</button>
+    </div>
+  </form>
+  </div>
+
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Pokémon Search App</title>
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -31,5 +107,36 @@
     </div>
 
     <script src="script.js"></script>
+
+
+    <title>Roman Numeral Converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Roman Numeral Converter</h1>
+        <label for="number">Enter a number (1 - 3999):</label>
+        <input type="number" id="number" />
+        <button id="convert-btn">Convert</button>
+        <p id="output"></p>
+    </div>
+
+    <title>Phone Number Validator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div id="app">
+        <h1>Phone Number Validator</h1>
+        <input type="text" id="user-input" placeholder="Enter phone number">
+        <button id="check-btn">Check</button>
+        <button id="clear-btn">Clear</button>
+        <div id="results-div"></div>
+    </div>
+
+
+    <script src="script.js"></script>
+
+
 </body>
 </html>
